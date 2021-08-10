@@ -1,0 +1,22 @@
+{
+  "name": "css-study",
+  "version": "1.0.0",
+  "description": "css-study",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tttxiaowei/css-study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tttxiaowei/css-study/issues"
+  },
+  "homepage": "https://github.com/tttxiaowei/css-study#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&lt;title&gt; 元素</title>
+    <style>
+      #aaa.aa {
+        color: red !important;
+        border: 1px solid black;
+
+      }
+      .aa div {
+          border: inherits;
+        }
+      .bb {
+        color: blue !important;
+      }
+      #aaa {
+        color: green;
+      }
+      
+      body {
+    color: green;
+}
+          
+.my-class-1 a {
+    color: inherit;
+}
+          
+.my-class-2 a {
+    color: initial;
+}
+          
+.my-class-3 a {
+    color: unset;
+}
+    
+#outer div ul .nav a {
+  background-color: blue;
+  padding: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+div div li a {
+  color: yellow;
+}    
+   
+div div li a {
+  background-color: inherit
+}        
+
+h1[class~="bb"] ~ div {
+  font-size: 38px;
+}
+    
+    </style>
+  </head>
+  <body>
+    <h1 class="bb aa" id="aaa" style="color: orange;">&lt;h1&gt; 元素
+      <div>bbbb</div>
+    </h1>
+
+    <ul>
+      <li>Default <a href="#">link</a> color</li>
+      <li class="my-class-1">Inherit the <a href="#">link</a> color</li>
+      <li class="my-class-2">Reset the <a href="#">link</a> color</li>
+      <li class="my-class-3">Unset the <a href="#">link</a> color</li>
+  </ul>
+
+  <div id="outer" class="container">
+    <div id="inner" class="container">
+      <ul>
+        <li class="nav"><a href="#">One</a></li>
+        <li class="nav"><a href="#">Two</a></li>
+      </ul>
+    </div>
+  </div>
+  </body>
+</html>
