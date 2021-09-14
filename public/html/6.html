@@ -18,14 +18,18 @@
     </style>
   </head>
   <body>
-    <div>
-      CSS中的书写模式是指文本的排列方向是横向还是纵向的。writing-mode 属性使我们从一种模式切换到另一种模式。为此，你不必使用一种竖向的语言——你还可以更改部分文字的方向以实现创新性的布局。
+    <div style="writing-mode: vertical-rl;">
+      <div>
+        A paragraph. Demonstrating Writing Modes in CSS.
+        CSS中的书写模式是指文本的排列方向是横向还是纵向的。writing-mode 属性使我们从一种模式切换到另一种模式。为此，你不必使用一种竖向的语言——你还可以更改部分文字的方向以实现创新性的布局。
+      </div>
+      <div>block</div>
+      <div style="display: inline-block;">inline-block</div>
+      <div style="display: inline-block;">inline-block</div>
+      <div style="width: 200px; height: 400px; background-color: green;">width: 200px; height: 400px;width和height属性，不会随着书写方式改变而改变，也就是说在纵向书写模式下，width实际上是元素的高，height实际上是元素的宽。  </div>
+      <div style="inline-size: 200px; block-size: 400px; background-color: red;">inline-size: 200px; block-size: 400px;横向书写模式下，映射到width的属性被称作内联尺寸（inline-size）——内联维度的尺寸。而映射height的属性被称为块级尺寸（block-size），这是块级维度的尺寸。</div>
+      <div style="float: right;">right</div>
     </div>
-    <div>block</div>
-    <div style="display: inline-block;">inline-block</div>
-    <div style="display: inline-block;">inline-block</div>
-    <div>block</div>
-    <div style="float: right;">right</div>
 
     <div class="parent">
       <div class="child"></div>
