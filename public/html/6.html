@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&lt;title&gt; 元素</title>
+    <style>
+      .parent {
+        clear: both;
+        width: 500px;
+        height: 600px;
+        background-color: green;
+      }
+      .child {
+        background: red;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      CSS中的书写模式是指文本的排列方向是横向还是纵向的。writing-mode 属性使我们从一种模式切换到另一种模式。为此，你不必使用一种竖向的语言——你还可以更改部分文字的方向以实现创新性的布局。
+    </div>
+    <div>block</div>
+    <div style="display: inline-block;">inline-block</div>
+    <div style="display: inline-block;">inline-block</div>
+    <div>block</div>
+    <div style="float: right;">right</div>
+
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </body>
+</html>
